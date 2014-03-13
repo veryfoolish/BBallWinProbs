@@ -50,7 +50,7 @@ func main() {
 			for sectm := 0; sectm < 60; sectm++ {
 				wg.Add(1)
 				go getPercentage(quarter, score, mintm, sectm, theOutput)
-				time.Sleep(10000 * time.Millisecond)
+				time.Sleep(10 * time.Second)
 			}
 		}
 	}
